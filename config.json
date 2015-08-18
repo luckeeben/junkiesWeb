@@ -1,0 +1,6 @@
+{
+  "AppSettings": {
+    "SiteTitle": "junkiesWeb",
+    "JunkiesApiUri": "http://localhost:5000/api"
+  }
+}

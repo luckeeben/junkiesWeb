@@ -1,0 +1,27 @@
+@using junkiesWeb.Models
+@model List<Ship>
+@{
+    ViewBag.Title = "Ships";
+}
+<h1>@ViewBag.Title</h1>
+
+
+<table class="table">
+    <tr>
+        <th>Id</th>
+		<th>Sector Id</th>
+    </tr>
+
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Id)
+        </td>
+		<td>
+            @Html.DisplayFor(modelItem => item.SectorId)
+        </td>
+    </tr>
+}
+
+</table>

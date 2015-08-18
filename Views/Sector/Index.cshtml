@@ -1,0 +1,35 @@
+@using junkiesWeb.Models
+@model List<SectorViewModel>
+@{
+    ViewBag.Title = "Sectors";
+}
+<h1>@ViewBag.Title</h1>
+
+
+<table class="table">
+    <tr>
+        <th>Id</th>
+        <th>No</th>
+        <th>Quadrant Id</th>
+        <th>Warps</th>
+    </tr>
+
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.No)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.QuadrantId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Warps)
+        </td>        
+    </tr>
+}
+
+</table>
